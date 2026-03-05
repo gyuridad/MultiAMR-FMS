@@ -1,3 +1,9 @@
+- 다중 모바일로봇 FMS 제어 영상
+  - https://drive.google.com/file/d/1Zx5dONKeyr1MZxjJwlt22xsEr3WUezRJ/view?usp=drive_link 
+
+- FMS 실행문 정리
+  - https://www.notion.so/FMS-3145d0bd696380ad8288f498cf044234 
+
 - Traffic Manager
   - 3대의 모바일로봇을 웨이포인트 기반으로 경로를 생성하고 로봇간 충돌을 회피하는 경로를 생성하는 역할
 - Orchestrator
