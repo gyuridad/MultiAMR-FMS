@@ -1,0 +1,10 @@
+# Goal (System2 -> System1)
+string plan_json
+---
+# Result (System1 -> System2)
+bool success
+string message
+---
+# Feedback (optional)
+int32 current_index
+string queue_status

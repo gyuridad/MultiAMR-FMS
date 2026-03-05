@@ -1,0 +1,61 @@
+name: domain_bridge_pinky1
+topics:
+  # ---------------- Pinky1542 (36) -> Laptop (30) ----------------
+  /pinky1/obstacle_detected:
+    from_domain: 36
+    to_domain: 30
+    type: std_msgs/msg/Bool
+
+  /pinky1/robot_state:
+    from_domain: 36
+    to_domain: 30
+    type: pinky_interfaces/msg/RobotState
+
+  /pinky1/battery_voltage:
+    from_domain: 36
+    to_domain: 30
+    type: std_msgs/msg/Float32
+
+  /pinky1/cmd_vel:
+    from_domain: 36
+    to_domain: 30
+    type: geometry_msgs/msg/Twist
+
+  /pinky1/mission_result:
+    from_domain: 36
+    to_domain: 30
+    type: std_msgs/msg/String
+
+  # MapWall JSON
+  /pinky1/debug/walls_xy_json:
+    from_domain: 36
+    to_domain: 30
+    type: std_msgs/msg/String
+
+  # ✅ TF (pinky1 only)
+  /tf:
+    from_domain: 36
+    to_domain: 30
+    type: tf2_msgs/msg/TFMessage
+
+  /tf_static:
+    from_domain: 36
+    to_domain: 30
+    type: tf2_msgs/msg/TFMessage
+
+  # ---------------- Laptop (30) -> Pinky1542 (36) ----------------
+  /traffic/mission_request:    # 상대이름으로 바꿀땐 /pinky1/mission_request
+    from_domain: 30
+    to_domain: 36
+    type: std_msgs/msg/String
+
+  /traffic/mission_cancel:      # 상대이름으로 바꿀땐 /pinky1/mission_cancel
+    from_domain: 30
+    to_domain: 36
+    type: std_msgs/msg/String
+
+  # AvoidDecision 결과 (노트북 계산) -> 로봇
+  /pinky1/vision/avoid_dir_json:
+    from_domain: 30
+    to_domain: 36
+    type: std_msgs/msg/String

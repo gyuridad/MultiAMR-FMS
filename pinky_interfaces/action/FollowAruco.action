@@ -1,0 +1,12 @@
+# Goal (System1 -> FollowArucoActionServer)
+int32 marker_id
+float32 timeout_sec
+---
+# Result
+bool success
+string message
+---
+# Feedback
+string phase
+float32 err_z
+float32 dx

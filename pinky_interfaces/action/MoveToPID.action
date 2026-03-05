@@ -1,0 +1,11 @@
+# Goal (System1 -> GoalMover)
+geometry_msgs/PoseStamped target
+float32 timeout_sec
+---
+# Result (GoalMover -> System1)
+bool success
+int32 status
+string message
+---
+# Feedback (optional)
+float32 distance_remaining
